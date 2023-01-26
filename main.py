@@ -16,9 +16,16 @@ print(list)
 print(col)
 
 print('input a')
-a=input()
-print(a)
+a=int(input())
+print('input b')
+b=int(input())
 c=a//b
 c=a*b
 c=a**b
 c=round(a*b,5)
+
+if a>b:
+    print('a > b')
+else:
+    print('a < b')
+
