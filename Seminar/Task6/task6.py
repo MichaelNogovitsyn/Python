@@ -9,7 +9,7 @@
 385916 -> yes
 123456 -> no """
 
-ticketNum=int(input('Input ticket number: '))
+ticketNum=int(input('Input you rticket number: '))
 def isHappy(ticket):
     n1=ticket//100000
     print(n1)
