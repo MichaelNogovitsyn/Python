@@ -1,3 +1,5 @@
+from random import randint
+
 nums=[1,2,3,4,5,6,7,8,9,10]
 unic=[1,2,3] 
 for element in nums:
@@ -25,3 +27,5 @@ for element in d:
         s.add(value)
 print(s)
 ##########
+
+a=[0]*n
