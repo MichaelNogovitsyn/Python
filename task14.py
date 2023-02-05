@@ -11,4 +11,4 @@ while res <= N:
     k+=1
     if res>N:
         break
-    print(res)
+    print(res,end=', ')
