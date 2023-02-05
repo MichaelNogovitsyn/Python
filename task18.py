@@ -12,7 +12,6 @@ from random import randint
 n = int(input("enter size of array: "))
 x = int(input("enter digit from 0 to 10: "))
 a = [0]*n
-count = 0
 res = 0
 difference = 1000
 
