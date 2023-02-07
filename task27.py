@@ -1,4 +1,6 @@
 # Посчитать количество слов в предложении
-
+print("word")
 text=input().split()
-print(len(text))
+uniq = set(text)
+print(uniq)
+print(len(uniq))
