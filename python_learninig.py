@@ -10,7 +10,7 @@ print(len(set(nums)))
 arr = input("Enter data".split(' '))
 print('arr=',arr)
 
-list2=[i for i in range(1,101)] 
+list2=[i for i in range(1,101) if i%2 !=0] 
 
 arr =list(map(int,input('Enter data:').split(' ')))
 print(arr)
@@ -33,3 +33,4 @@ a=[0]*n
 str1="апрлоравролаврлолдфво"
 char = 'п'
 if char in str1:
+    print()
