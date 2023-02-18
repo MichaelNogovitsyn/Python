@@ -12,10 +12,8 @@
 Вывод:
 Парам пам-пам """
 
-song = input('Введите стих: ')
+fraze_list = input('Введите стих: ').split(' ')
 list_vowels = ['А', 'О', 'У', 'Ы', 'Э', 'Е', 'Ё', 'И', 'Ю', 'Я']
-fraze_list = song.split(' ')
-print(fraze_list)
 
 def Count_vowels(text):
     count = 0
