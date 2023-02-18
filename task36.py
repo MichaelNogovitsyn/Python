@@ -15,24 +15,14 @@ print_operation_table(lambda x, y: x * y)
  5 10 15 20 25 30
  6 12 18 24 30 36  """
 
-row_set = 1
-col_set = 1
-
-def f(table_set,index_row=2,index_col=2):
-    print(table_set[index_row-1][index_col-1])
-    #return table_set[row-1][col-1]
-
-def print_operation_table(operation,num_rows=6,num_columns=6):
+def print_operation_table(operation, num_rows=6, num_columns=6):
     table = []
-    rows_list=[]
-    operation=f
-    for row in range(num_rows):
+    rows_list = []
+    for row in range(1, num_rows+1):
         rows_list.clear()
-        for col in range(1,num_columns+1):
-            rows_list.append(col+row)
+        for col in range(1, num_columns+1):
+            rows_list.append(operation(row, col))
         table.append(rows_list)
-        print(rows_list,end='\n')
-    operation(table,row_set,col_set)
+        print(''.join(f'{e:<4}' for e in rows_list))
 
-table=[[10,20,30],[40,50,60]]
-print_operation_table(f(table,1,1),3,3) 
+print_operation_table(lambda x, y: x*y,6,6)

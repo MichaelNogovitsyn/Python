@@ -6,7 +6,7 @@ for element in nums:
     if element not in unic:
         unic.append(element)       
 print(len(set(nums)))
-
+print(''.join(f'{e:<4}' for e in rows_list))
 ##############     List   ####################
 arr = input("Enter data".split(' '))
 print('arr=',arr)
