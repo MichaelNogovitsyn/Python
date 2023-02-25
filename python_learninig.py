@@ -47,4 +47,10 @@ for line in file.readlines():
     resultData.append(tuple(line.split('\n')[0].split(';')))
 file.close()
 print(resultData)
+
+with open('text.txt','r', encoding='utf-8') as file:
+    data = ''.join(file.readlines())
+    print(data)
+
+
 ###################################################
